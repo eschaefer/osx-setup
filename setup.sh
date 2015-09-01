@@ -32,6 +32,7 @@ formulae=(
   memcached
   mysql
   sqlite
+  privoxy
   caskroom/cask/brew-cask
 )
 
@@ -74,6 +75,7 @@ apps=(
   vlc
   smcfancontrol
   android-file-transfer
+  wireshark
 )
 
 # Install apps to ~/Applications
