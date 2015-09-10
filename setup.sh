@@ -36,10 +36,7 @@ formulae=(
   caskroom/cask/brew-cask
 )
 
-for item in formulae
-  do
-    brew install $item
-done
+brew install ${formulae[@]}
 
 brew link openssl --force
 
