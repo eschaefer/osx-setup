@@ -1,2 +1,3 @@
-Open terminal.
-`$ bash setup.sh`
+```
+$ bash setup.sh
+```
