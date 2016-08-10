@@ -33,6 +33,12 @@ formulae=(
   mysql
   sqlite
   privoxy
+  fontforge
+  heroku
+  ncdu
+  ngrep
+  redis
+  ffmpeg
   caskroom/cask/brew-cask
 )
 
@@ -43,16 +49,15 @@ brew link openssl --force
 # Casks
 # Apps
 apps=(
+  atom
   google-chrome
   google-chrome-canary
   firefox
   1password
   iterm2
   slack
-  copy
   virtualbox
   evernote
-  dash
   flux
   skype
   sourcetree
@@ -68,7 +73,6 @@ apps=(
   keka
   openoffice
   sequel-pro
-  sublime-text3
   vlc
   smcfancontrol
   android-file-transfer
