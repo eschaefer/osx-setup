@@ -30,7 +30,6 @@ formulae=(
   imagemagick
   postgresql
   memcached
-  mysql
   sqlite
   privoxy
   fontforge
