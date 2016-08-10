@@ -51,7 +51,6 @@ brew link openssl --force
 apps=(
   atom
   google-chrome
-  google-chrome-canary
   firefox
   1password
   iterm2
@@ -77,6 +76,11 @@ apps=(
   smcfancontrol
   android-file-transfer
   wireshark
+  opera-mobile-emulator
+  imageoptim
+  svgcleaner
+  postgres
+  handbrake
 )
 
 # Install apps to ~/Applications
