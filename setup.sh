@@ -54,6 +54,7 @@ apps=(
   1password
   iterm2
   slack
+  insomnia
   virtualbox
   evernote
   flux
