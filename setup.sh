@@ -98,7 +98,10 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
 
-##
-## Manually
-# pick nvm node, iojs, hosts file, etc
+# If it runs...
+nvm install 5 --default
+
+npm i -g scss_lint GoogleChrome/lighthouse http-server
+
+
 
