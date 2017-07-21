@@ -84,10 +84,8 @@ apps=(
   handbrake
 )
 
-# Install apps to ~/Applications
-# Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="~/Applications" ${apps[@]}
+brew cask install ${apps[@]}
 
 # Remove outdated versions from the cellar
 brew cleanup
