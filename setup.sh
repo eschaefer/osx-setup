@@ -97,12 +97,13 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
 # If it runs...
-nvm install 5 --default
+nvm install 8 --default
 
-npm i -g scss_lint GoogleChrome/lighthouse http-server
+# Nice to always have a lightweight http server around.
+npm i -g http-server
 
 
 
