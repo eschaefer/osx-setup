@@ -23,6 +23,7 @@ formulae=(
   tree
   socat
   ack
+  the_silver_searcher
   android-sdk
   elasticsearch
   glib
