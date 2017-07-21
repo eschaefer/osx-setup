@@ -105,5 +105,8 @@ nvm install 8 --default
 # Nice to always have a lightweight http server around.
 npm i -g http-server
 
+# Yarn
+curl -o- -L https://yarnpkg.com/install.sh | bash
+
 
 
