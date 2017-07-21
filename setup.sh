@@ -63,7 +63,7 @@ apps=(
   sourcetree
   sqlitebrowser
   spotify
-  seil
+  karabiner-elements
   dnscrypt
   opera
   vagrant
