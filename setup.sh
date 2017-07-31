@@ -106,5 +106,7 @@ npm i -g http-server
 # Yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
+# Finally, consider a nice dotfile setup from 
+# https://github.com/mathiasbynens/dotfiles
 
 
