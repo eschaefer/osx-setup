@@ -49,6 +49,8 @@ brew link openssl --force
 # Casks
 # Apps
 apps=(
+  ngrok
+  docker
   atom
   google-chrome
   firefox
