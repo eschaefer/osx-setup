@@ -52,6 +52,8 @@ apps=(
   ngrok
   docker
   atom
+  spectacle
+  rocket
   google-chrome
   firefox
   1password
