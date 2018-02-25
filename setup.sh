@@ -24,7 +24,6 @@ formulae=(
   socat
   ack
   ripgrep
-  android-sdk
   elasticsearch
   glib
   gnupg
@@ -86,6 +85,7 @@ apps=(
   svgcleaner
   postgres
   handbrake
+  android-sdk
 )
 
 echo "installing apps..."
