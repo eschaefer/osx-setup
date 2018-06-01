@@ -67,7 +67,7 @@ apps=(
   sqlitebrowser
   spotify
   karabiner-elements
-  dnscrypt
+  bitbar
   opera
   vagrant
   colloquy
