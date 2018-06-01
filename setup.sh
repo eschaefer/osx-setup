@@ -50,7 +50,7 @@ brew link openssl --force
 apps=(
   ngrok
   docker
-  atom
+  visual-studio-code
   spectacle
   rocket
   google-chrome
