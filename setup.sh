@@ -39,6 +39,7 @@ formulae=(
   redis
   ffmpeg
   caskroom/cask/brew-cask
+  sshuttle
 )
 
 brew install ${formulae[@]}
@@ -49,7 +50,6 @@ brew link openssl --force
 # Apps
 apps=(
   ngrok
-  docker
   visual-studio-code
   spectacle
   rocket
@@ -99,10 +99,10 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # If it runs...
-nvm install 8 --default
+nvm install 10 --default
 
 # Nice to always have a lightweight http server around.
 npm i -g http-server
