@@ -33,7 +33,6 @@ formulae=(
   sqlite
   privoxy
   fontforge
-  heroku
   ncdu
   ngrep
   redis
@@ -51,7 +50,7 @@ brew link openssl --force
 apps=(
   ngrok
   visual-studio-code
-  spectacle
+  rectangle
   rocket
   google-chrome
   firefox
@@ -69,15 +68,11 @@ apps=(
   karabiner-elements
   bitbar
   opera
-  vagrant
   colloquy
-  mamp
   cyberduck
   keka
-  openoffice
   sequel-pro
   vlc
-  smcfancontrol
   android-file-transfer
   wireshark
   opera-mobile-emulator
@@ -102,7 +97,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # If it runs...
-nvm install 10 --default
+nvm install 12 --default
 
 # Nice to always have a lightweight http server around.
 npm i -g http-server
