@@ -1,23 +1,20 @@
 #!/bin/bash
 
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Make sure we’re using the latest Homebrew
-brew update
+# brew update
 
 # Upgrade any already-installed formulae
-brew upgrade
+# brew upgrade
 
 formulae=(
   coreutils
   moreutils
   findutils
-  gnu-sed --default-names
-  wget --enable-iri
-  vim --override-system-vi
-  homebrew/dupes/grep
-  homebrew/dupes/screen
+  gnu-sed
+  wget
   openssl
   git
   tree
@@ -28,7 +25,6 @@ formulae=(
   glib
   gnupg
   imagemagick
-  postgresql
   memcached
   sqlite
   privoxy
@@ -37,7 +33,6 @@ formulae=(
   ngrep
   redis
   ffmpeg
-  caskroom/cask/brew-cask
   sshuttle
 )
 
@@ -54,22 +49,16 @@ apps=(
   rocket
   google-chrome
   firefox
-  1password
+  bitwarden
   iterm2
   slack
   insomnia
-  virtualbox
-  evernote
   flux
   skype
   sourcetree
-  sqlitebrowser
   spotify
-  karabiner-elements
   bitbar
   opera
-  colloquy
-  cyberduck
   keka
   sequel-pro
   vlc
@@ -78,26 +67,30 @@ apps=(
   opera-mobile-emulator
   imageoptim
   svgcleaner
-  postgres
   handbrake
-  android-sdk
+  android-platform-tools
+  zoom
+  dbeaver-community
+  nextcloud
+  docker
+  soulseek
 )
 
 echo "installing apps..."
-brew cask install ${apps[@]}
+brew install --cask ${apps[@]}
 
 # Remove outdated versions from the cellar
 brew cleanup
 
 # RVM
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB 
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 # If it runs...
-nvm install 12 --default
+nvm install 18 --default
 
 # Nice to always have a lightweight http server around.
 npm i -g http-server
@@ -105,7 +98,8 @@ npm i -g http-server
 # Yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Finally, consider a nice dotfile setup from 
 # https://github.com/mathiasbynens/dotfiles
-
-
