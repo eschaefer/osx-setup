@@ -9,6 +9,8 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+brew tap homebrew/cask-fonts
+
 formulae=(
   coreutils
   moreutils
@@ -74,6 +76,7 @@ apps=(
   nextcloud
   docker
   soulseek
+  font-fira-code
 )
 
 echo "installing apps..."
