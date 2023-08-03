@@ -78,6 +78,7 @@ apps=(
   soulseek
   font-fira-code
   audacity
+  brave-browser
 )
 
 echo "installing apps..."
