@@ -77,6 +77,7 @@ apps=(
   docker
   soulseek
   font-fira-code
+  audacity
 )
 
 echo "installing apps..."
