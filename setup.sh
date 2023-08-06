@@ -79,6 +79,7 @@ apps=(
   font-fira-code
   audacity
   brave-browser
+  calibre
 )
 
 echo "installing apps..."
