@@ -80,6 +80,7 @@ apps=(
   audacity
   brave-browser
   calibre
+  flameshot
 )
 
 echo "installing apps..."
