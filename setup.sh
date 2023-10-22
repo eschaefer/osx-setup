@@ -93,17 +93,8 @@ brew cleanup
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB 
 \curl -sSL https://get.rvm.io | bash -s stable
 
-# NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-
-# If it runs...
-nvm install 18 --default
-
-# Nice to always have a lightweight http server around.
-npm i -g http-server
-
-# Yarn
-curl -o- -L https://yarnpkg.com/install.sh | bash
+# Volta
+curl https://get.volta.sh | bash
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
