@@ -81,6 +81,7 @@ apps=(
   brave-browser
   calibre
   tableplus
+  bruno
 )
 
 echo "installing apps..."
